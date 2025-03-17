@@ -1,0 +1,156 @@
+.digiconta {
+    padding-top: 169px;
+    overflow-x: hidden;
+
+    .container {
+        @include flex(flex-end, 5px, space-between);
+        .left {
+            flex: 1 0 auto;
+            @include maxW(532px);
+
+            h3 {
+                font-weight: 600;
+                letter-spacing: -1px;
+                span {
+                    display: block;
+                    color: $gray-400;
+                    opacity: 0.8;
+                    line-height: 112%;
+                }
+            }
+            ul {
+                margin: 48px 0;
+                @include flex(flex-start, 48px, flex-start, column);
+                li {
+                    @include flex(center, 24px, space-between);
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                    .text {
+                        h6 {
+                            font-weight: 600;
+                            line-height: 150%;
+                            letter-spacing: -0.5px;
+                            margin-bottom: 2px;
+                        }
+                        p {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+            .button {
+                @include btn (12px, 22px);
+            }
+        }
+        .right {
+            @include maxW(479px);
+            height: 529px;
+            position: relative;
+            img {
+                position: absolute;
+                @include maxW(326px);
+            }
+            .up {
+                bottom: -61px;
+                left: -50px;
+            }
+            .up2 {
+                top: -40px;
+                right: -51px;
+            }
+            @include mq(1093px) {
+                @include maxW(383px);
+                img {
+                    @include maxW(280px);
+                }
+                .up {
+                    bottom: -52px;
+                    left: -43px;
+                }
+            }
+        }
+    }
+
+    padding-bottom: 140px;
+
+    @include mq(992px) {
+        padding-top: 95px;
+
+        .container {
+            @include flex(center, 52px, flex-start, column);
+
+            .left {
+                text-align: center;
+
+                h3:first-child {
+                    font-size: 2.8rem;
+                    margin-bottom: 16px;
+                }
+                h3 {
+                    font-size: 3.2rem;
+                    line-height: 112%;
+                }
+                
+                ul {
+                    margin: 40px 0 56px;
+                    text-align: left;
+                }
+            }
+            .right {
+                img {
+                    @include maxW(261px);
+                }
+            }
+        }
+        padding-bottom: 60px;
+    }
+
+    @include mq(560px) {
+        .container {
+            .left {
+                h3:first-child {
+                    font-size: 2.4rem;
+                }
+                h3 {
+                    font-size: 2.8rem;
+                }
+                ul {
+                    @include flex(center, 56px, center, column);
+                    @include maxW(240px);
+                    margin: 40px auto 56px;
+
+                    li {
+                        @include flex(center, 8px, center, column);
+                        .text {
+                            text-align: center;
+                            h6 {
+                                margin-bottom: 8px;
+                            }
+                            p {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                @include maxW(335px);
+                height: 400px;
+                img {
+                    @include maxW(240px);
+                }
+                .up {
+                    top: 25px;
+                    bottom: unset;
+                    left: -40px;
+                }
+                .up2 {
+                    top: -30px;
+                    right: -40px;
+                }
+            }
+        }
+    }
+}

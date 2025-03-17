@@ -1,0 +1,74 @@
+section.recursos {
+    margin-top: 112px;
+
+    .container {
+        .text {
+            @include flex(center, 0, space-between);
+
+            h3 {
+                max-width: 661px;
+            }
+
+            margin-bottom: 80px;
+
+            p {
+                font-size: 16px;
+                font-weight: 300;
+                
+                text-align: right;
+            }
+        }
+
+        .cardbox {
+            @include flex(start, 0, space-between)
+        }
+
+        @include mq('laptop') {
+            .cardbox {
+                display: grid;
+                grid-template-columns: 260px 260px;
+                justify-content: space-evenly;
+                row-gap: 30px;
+            }
+            .cardbox > .card {
+                max-width: 405px;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @include mq('tablet') {
+            .text {
+                margin-bottom: 56px;
+            }
+    
+            .text {
+                @include flex(center, 16px);
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .text h3 {
+                max-width: 525px;
+                font-size: 28px;
+                letter-spacing: -0.84px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .cardbox {
+                @include flex(center, 64px, center);
+                flex-direction: column; 
+            }
+            .cardbox > .card {
+                max-width: 405px;
+            }
+        }
+    }
+
+    margin-bottom: 111px;
+
+    @include mq('tablet') {
+        margin: 40px 0;
+    }
+}

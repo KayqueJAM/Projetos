@@ -1,0 +1,51 @@
+@mixin flex($align:flex-start, $gap:0, $justify:flex-start, $direction:row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    flex-direction: $direction;
+}
+
+@mixin btn($up-down, $left-right) {
+    display: inline-block;
+    color: $aux-color-1;
+    background-color: $aux-color-2;
+    border-radius: 122px;
+    cursor: pointer;
+    border: 0.5px solid black;
+
+    font-family: $font-heading;
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: $up-down $left-right;
+
+    transition: .3s ease;
+    &:hover {
+        color: $gray-100;
+        filter: brightness(1);
+    }
+    &:active {
+        background-color: transparent;
+    }
+}
+
+@mixin maxW($max-width) {
+    max-width: $max-width;
+    width: 100%;
+}
+
+@mixin mq($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@keyframes cardAnimation {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0.8) rotate(-30deg);
+    }
+}

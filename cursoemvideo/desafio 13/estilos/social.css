@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+}
+body {
+    background-color: rgb(21, 21, 21);
+}
+body::-webkit-scrollbar {
+    width: 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+a {
+    display: block;
+    background-color: brown;
+    text-align: center;
+    font: 500 1.5em Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}

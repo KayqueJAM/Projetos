@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/typograph.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mquery.css">
+    <title>Structboost</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="./">
+                <img src="img/logo.svg" alt="logo da Structboost">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Diferenciais</a></li>
+                    <li><a href="#">Galeria</a></li>
+                </ul>
+                <button class="btn-primary">
+                    Entrar em contato
+                </button>
+            </nav>
+            <div class="menu-bt" onclick="menuSwitch()">
+                <img src="img/menu.svg" alt="simbolo de menu">
+            </div>
+        </div>
+    </header>
+    <menu>
+        <a href="#">Home</a>
+        <a href="#">Diferenciais</a>
+        <a href="#">Galeria</a>
+        <button>
+            Entrar em contato
+        </button>
+    </menu>
+    <section class="s-hero">
+        <div class="container">
+            <div class="text">
+                <h1>
+                    Front-end descomplicado e direto ao ponto!
+                </h1>
+                <p>
+                    Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.
+                </p>
+                <button class="btn-primary">
+                    Fazer parte da lista de espera
+                </button>
+                <img src="img/arrow.svg" class="arrow" alt="">
+            </div>
+        </div>
+        <img src="img/ilustra-hero.svg" class="ilushero" alt="">
+    </section>
+    <section class="rd">
+        <div class="container">
+            <h3>
+                Transformando Ideias em Realidade Digital!
+            </h3>
+
+            <ul>
+                <li>
+                    <div class="item-digital">
+                        <div class="icon">
+                            <img src="img/impacto.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>
+                                Impacto Visual Imbatível
+                            </h6>
+                            <p>
+                                Domine a arte de criar interfaces <br> envolventes que conquistam <br> corações e mentes dos usuários.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-digital">
+                        <div class="icon">
+                            <img src="img/nav.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <h6>
+                                Navegabilidade sem Limites
+                            </h6>
+                            <p>
+                                Construa a base sólida para uma <br>experiência de usuário fluida e intuitiva, garantindo a satisfação do público.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-digital">
+                        <div class="icon">
+                            <img src="img/performance.svg" alt="" style="align-self: flex-end;">
+                        </div>
+                        <div class="info">
+                            <h6>
+                                Performance Acelerada
+                            </h6>
+                            <p>
+                                O Front End é a chave para otimizar o desempenho do seu site, cativando <br> visitantes com velocidade e eficiência.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="arte">
+        <div class="container">
+            <div class="title-text">
+                <div class="left">
+                    <h3>
+                        Domine a Arte da Front-end
+                    </h3>
+                    <p>
+                        Prepare-se para criar interfaces incríveis e funcionais para a web com este curso completo de front-end.
+                    </p>
+                </div>
+                <p>
+                    Junte-se a nós neste curso de front-end e embarque em uma jornada emocionante para se tornar um desenvolvedor web altamente qualificado.
+                </p>
+            </div>
+            <div class="grid">
+                <div class="card-post">
+                    <p class="tag">
+                        Fundamentos
+                    </p>
+                    <div class="img">
+                        <img src="img/mountain.svg" alt="">
+                    </div>
+                    <h6>
+                        HTML5 e Semântica
+                    </h6>
+                    <p>
+                        Aprenda a usar a mais recente versão do HTML e crie páginas web bem estruturadas e otimizadas para os mecanismos de busca.
+                    </p>
+                </div>
+                <div class="card-post">
+                    <p class="tag">
+                        Estilizando
+                    </p>
+                    <div class="img">
+                        <img src="img/mountain.svg" alt="">
+                    </div>
+                    <h6>
+                        CSS3 e Estilização Avançada
+                    </h6>
+                    <p>
+                        Explore os recursos avançados do CSS3 para criar layouts responsivos, animações incríveis e designs atrativos.
+                    </p>
+                </div>
+                <div class="card-post">
+                    <p class="tag">
+                        Potencializando
+                    </p>
+                    <div class="img">
+                        <img src="img/mountain.svg" alt="">
+                    </div>
+                    <h6>
+                        Javascript Moderno
+                    </h6>
+                    <p>
+                        Aprenda a programar com Javascript moderno e torne suas páginas interativas e dinâmicas, proporcionando uma experiência única .
+                    </p>
+                </div>
+                <div class="card-post">
+                    <p class="tag">
+                        Aplicações
+                    </p>
+                    <div class="img">
+                        <img src="img/mountain.svg" alt="">
+                    </div>
+                    <h6>
+                        Frameworks Front-end
+                    </h6>
+                    <p>
+                        Descubra como utilizar frameworks populares como React, Angular e Vue.js para criar aplicações web completas e eficientes.
+                    </p>
+                </div>
+                <div class="card-post">
+                    <p class="tag">
+                        Designs
+                    </p>
+                    <div class="img">
+                        <img src="img/mountain.svg" alt="">
+                    </div>
+                    <h6>
+                        Design Responsivo
+                    </h6>
+                    <p>
+                        Aprenda a criar designs responsivos e mobile-first que se adaptam perfeitamente a diferentes tamanhos de tela.
+                    </p>
+                </div>
+            </div>
+        </div>      
+    </section>
+    <section class="cta">
+        <div class="text">
+            <h2>
+                Front-end descomplicado e direto ao ponto!
+            </h2>
+            <p>
+                Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.
+            </p>
+            <button class="btn-primary white">
+                Fazer parte da lista de espera
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <main>
+                <div class="left">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="logo da Structboost">
+                    </a>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    </p>
+                </div>
+                <nav>
+                    <div class="pag">
+                        <p class="title">
+                            Lista de páginas
+                        </p>
+                        <a href="#">Home</a>
+                        <a href="#">Diferenciais</a>
+                        <a href="#">Galeria</a>
+                    </div>
+                    <div class="sol">
+                        <p class="title">
+                            Soluções
+                        </p>
+                        <a href="#">Texto link 01</a>
+                        <a href="#">Texto link 02</a>
+                        <a href="#">Texto link 03</a>
+                    </div>
+                    <div class="con">
+                        <p class="title">
+                            Contato
+                        </p>
+                        <a href="#">
+                            Texto link 01
+                        </a>
+                        <a href="#">Texto link 02</a>
+                    </div>
+                    <div class="redes">
+                        <p class="title">
+                            Nossas redes socais
+                        </p>
+                        <a href="#" class="social">
+                            <img src="img/instagram.svg" alt="logo do instagram">
+                            <p>
+                                Instagram
+                            </p>
+                        </a>
+                        <a href="#" class="social">
+                            <img src="img/LinkedIn.svg" alt="logo do linkedin">
+                            <p>
+                                Linkedin
+                            </p>
+                        </a>
+                        <a href="#" class="social">
+                            <img src="img/youtube.svg" alt="logo do youtube">
+                            <p>Youtube</p>
+                        </a>
+                    </div>
+                </nav>
+            </main>
+            <p class="trade" style="margin-top: 2.4rem;">
+                2023 © Todos os direitos reservados. <strong>Codeboost</strong>
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

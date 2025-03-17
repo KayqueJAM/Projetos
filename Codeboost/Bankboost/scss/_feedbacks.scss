@@ -1,0 +1,177 @@
+.feedbacks {
+    padding-top: 134px;
+
+    .container {
+        .text {
+            position: relative;
+            > h3 {
+                color: hsla(224, 8%, 62%, 0.8);
+                font-weight: 600;
+                line-height: 112%;
+                letter-spacing: -1px;
+
+                strong {
+                margin-top: 8px;
+                display: block;
+                color: $gray-800;
+                line-height: 112%;
+                letter-spacing: -1px;
+                
+                    &::after {
+                        content: "😊";
+                        font-size: 28px;
+                        vertical-align: top;
+                    }
+                }
+            }
+            // #carrossel {
+            //     position: absolute;
+            //     right: 0;
+            //     bottom: 0;
+
+            //     width: fit-content;
+            //     height: 7px;
+
+            //     @include flex(center, 3px, space-between);
+
+            //     li {
+            //         
+            //     }
+            //     .active {
+            //         background-color: $primary-color-20;
+            //         width: 18px;
+            //     }
+            // }
+        }
+        .swiper-pagination {
+            position: absolute;
+            left: unset;
+            right: 0;
+            bottom: 0;
+            width: fit-content;
+
+            &-bullet {
+                background-color: $primary-color-20;
+                opacity: 0.2;
+                width: 8.62px;
+                height: 7px;
+                border-radius: 5px;
+                transition: all .5s ease;
+                &-active {
+                    width: 17.23px;
+                    opacity: 1;
+                }
+            }
+        }
+        .swiper {
+            margin-top: 46px;
+            width: 100%;
+            
+
+            .swiper-slide {
+                padding: 37px 32px 23px;
+                scroll-snap-align: center;
+                width: 384px;
+                height: 209px;
+                flex-grow: 0;
+                flex-shrink: 0;
+                background-color: #f1f0f58c;
+                border-radius: 8px;
+    
+                div {
+                    @include flex(center, 5px, space-between);
+    
+                    margin-bottom: 21px;
+                    p {
+                        color: $gray-800;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        line-height: 112%;
+                        letter-spacing: -1px;
+                    }
+                        
+                }
+                p {
+                    font-size: 1.8rem;
+                }
+    
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        @include mq(1200px) {
+            .swiper {
+                .swiper-slide {
+                    height: 240px;
+                }
+            }
+        }
+    }
+    
+    @include mq(992px) {
+        padding-top: 56px;
+        background-color: white;
+        z-index: 2;
+        position: relative;
+        margin-top: -57.5px;
+        .container {
+            .text {
+                position: static;
+                h3 {
+                    font-size: 2.8rem;
+                    text-align: center;
+                
+                    strong {
+                        font-size: 3.4rem;
+                        text-align: center;
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+                .swiper-pagination {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -48px;
+                    transform: translateX(-50%);
+                }
+            }
+            .swiper {
+                margin-top: 40px;
+                padding: 0 27px;
+            }
+        }
+    }
+    
+    @include mq(560px) {
+         .container {
+            padding: 0;
+            .text {
+                h3 {
+                    @include maxW(253px);
+                    margin: auto;
+                    color: $gray-500;
+                    font-size: 2.4rem;
+                
+                    strong {
+                        font-size: 28px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .swiper {
+                .swiper-slide {
+                    padding: 32px 24px;
+                    width: 248px;
+                    div {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+    } 
+}

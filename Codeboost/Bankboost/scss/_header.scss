@@ -1,0 +1,92 @@
+header {
+    padding: 24px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    background: $gradient-1;
+    
+    .container {
+        @include flex(center, 50px, space-between);
+
+        .logo {
+            width: 176px;
+            height: 23px;
+            flex-shrink: 0;
+        }
+
+        nav {
+            @include flex(center, 20px, space-between);
+            @include maxW(896px);
+
+            ul {
+                @include maxW(576px);
+                @include flex(center, 0, space-between);
+                max-width: 576px;
+                width: 100%;
+                li {
+                    flex-shrink: 0;
+                    a {
+                        font-size: 1.6rem;
+                        color: $gray-100;
+                        font-weight: 500;
+                        line-height: normal;
+                        transition: opacity .3s ease;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+
+            > a {
+                border-radius: 122px;
+                border: 1px solid #FFF;
+                padding: 12px 24px;
+                
+                font-size: 1.6rem;
+                color: $gray-100;
+                font-weight: 600;
+                flex-shrink: 0;
+                transition: .1s ease;
+
+                &:hover {
+                    background-color: $aux-color-2;
+                    filter: brightness(1);
+                }
+                &:active {
+                    color: $aux-color-1;
+                }
+
+                @include mq(1200px) {
+                    padding: 12px 10px;
+                }
+            }
+
+
+        }
+        #menu {
+            display: none;
+            width: 27px;
+            height: 22px;
+        }
+    }   
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    
+    @include mq(992px) {
+
+        padding: 32.5px 0;
+
+        .container {
+            nav {
+                display: none;
+            }
+            #menu {
+                display: inline-block;
+            }
+        }
+    }
+}

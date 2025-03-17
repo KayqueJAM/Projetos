@@ -1,0 +1,28 @@
+<svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="19" fill="#F5F5F5"/>
+<g id="Mobile" clip-path="url(#clip0_1_748)">
+<rect width="390" height="6352" transform="translate(-77 -405)" fill="white"/>
+<g id="Hero">
+<rect width="390" height="873" transform="translate(-77 -405)" fill="url(#paint0_linear_1_748)"/>
+<g id="Frame 80427">
+<g id="Frame 80424">
+<g id="Frame 80421">
+<g id="Group 6">
+<rect id="Rectangle 353" x="1.04541" y="1" width="22.1739" height="17" rx="3" stroke="white" stroke-width="2"/>
+<path id="Vector 5" opacity="0.7" d="M1.89526 6.91309H22.5909" stroke="white" stroke-width="1.5"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_748" x1="-47" y1="-234.769" x2="729.485" y2="35.6961" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1A0078"/>
+<stop offset="1" stop-color="#6F47FF"/>
+</linearGradient>
+<clipPath id="clip0_1_748">
+<rect width="390" height="6352" fill="white" transform="translate(-77 -405)"/>
+</clipPath>
+</defs>
+</svg>

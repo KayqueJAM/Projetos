@@ -1,0 +1,72 @@
+.foot {
+    margin: 96px 25px 111px;
+
+
+    .container {
+        background: linear-gradient(93deg, #4320C3 -4.63%, #3D11DB 105.14%), url('../img/bg-1.svg') center top / cover no-repeat;
+        border-radius: 10px;
+
+        max-width: 1216px;
+        padding: 81px 20px;
+        text-align: center;
+
+        @include flex(center);
+        flex-direction: column;
+        
+        h1 {
+            max-width: 786px;
+            margin-bottom: 8px;
+        }
+        p {
+            max-width: 500px;
+            margin-bottom: 32px
+        }
+        button {
+            @include btn(20px, 65px);
+            font-weight: 500;
+        }
+        
+        color: #FFF;
+
+        @include mq('tablet') {
+            padding: 72px 15px;
+
+            h1 {
+                max-width: 500px;
+                color: #FFF;
+                font-size: 32px;
+                letter-spacing: -0.96px;
+            }
+            p {
+                max-width: 577px;
+                font-size: 18px;
+                line-height: 27px;
+                letter-spacing: -0.54px;
+                font-weight: 200;
+                
+            }
+            button {
+                @include btn(16px, 45px);
+                font-size: 16px;
+                letter-spacing: -0.48px;
+            }
+        }
+
+        @include mq('mobile') {
+            p {
+                max-width: 320px;
+            }
+        }
+
+        @media screen and (max-width: 376px) {
+            h1 {
+                max-width: 248px;
+            }
+            
+        }
+    }
+
+    @include mq('tablet') {
+        margin: 72px 25px 96px;
+    }
+}

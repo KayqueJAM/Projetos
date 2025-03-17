@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--lilas), var(--verde));
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#login {
+    background-color: white;
+    width: 250px;
+    
+    
+    
+    border-radius: 20px;
+    overflow: hidden;
+    
+    box-shadow: 0px 0px 10px #00000050;
+
+    
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+div#img {
+    background-image: url('../imagens/p1.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;    
+}
+div#form {
+    background-color: white;
+    padding: 8px;
+}
+h1 {
+    Text-align: center;
+    font-size: 2em;
+}
+div#form > p {
+    margin: 10px 0;
+}
+div.form {
+    background-color: var(--lilas);
+    margin: 5px 0;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--lilas);
+}
+div.form input {
+    display: inline-block;
+    height: 100%;
+    background-color:  #cbe2e1;
+    border: none;
+    width: calc(100% - 28.4px);
+    border-radius: 5px;
+    transform: translateY(-8px)
+}
+span {
+    color: white;
+    font-size: 2em;
+    padding-top: 10px;
+}
+div.form input:focus-within {
+    outline: none;
+    background-color: white;
+}
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px ;
+    border: none;
+    background-color:  #54bcb8;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover {
+    background-color: var(--verde);
+}
+
+form a.ems {
+    display: block;
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 5px;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #2d6462;
+}
+a.ems:hover {
+    background-color: #54bcb8;
+    cursor: pointer;
+}

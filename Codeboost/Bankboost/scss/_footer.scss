@@ -1,0 +1,181 @@
+footer {
+    background-color: $primary-color-10;
+    padding-top: 40px;
+
+    .container {
+        .top {
+            @include flex(center, 32px, space-between);
+
+            .social {
+                @include  flex(center, 24px, space-between);
+
+                p {
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 1.4rem;
+                }
+
+                .icons {
+                    @include  flex(center, 34px, space-between);
+                }
+            }
+        }
+        hr {
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            margin: 40px 0;
+        }
+        nav {
+            @include flex(flex-start, 56px, space-between);
+
+            .nav-list {
+                @include maxW(841px);
+                @include flex (flex-start, 10px, space-between);
+                flex-wrap: wrap;
+                
+
+                ul {
+                    @include flex(flex-start, 32px, flex-start, column);
+
+                    p {
+                        color: #FFF;
+                        font-weight: 600;
+                    }
+                    li {
+                        a {
+                            color: rgba(255, 255, 255);
+                            opacity: 0.67;
+                            font-size: 1.4rem;
+
+                            @include mq(400px) {
+                                font-size: clamp(1.2rem, 2vw, 1.4rem)
+                            }
+
+                            &:hover {
+                                opacity: 1;
+                                color: $aux-color-2;
+                                transition: opacity,color .3s ease;
+                            }
+                        }
+                    }
+                }
+            }
+            > div {
+                @include flex(center, 24px, center, column);
+
+                div {
+                    @include flex(center, 16px);
+                    
+                    width: 306px;
+                    flex-shrink: 0;
+                    border-radius: 6px;
+                    background: rgba(255, 255, 255, 0.04);
+                    padding: 26px 24px;
+                    
+                    p {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-weight: 600;
+                        span {
+                            display: block;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            margin-bottom: 16px;
+        }
+        hr:nth-of-type(2) {
+            margin-bottom: 24px;
+        }
+        .foot {
+            @include flex(flex-start, 16px);
+            font-size: 18px;
+            text-wrap: balance;
+            p {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 14px;
+            }
+        }
+        hr:last-child {
+            background: #FFC800;
+            height: 4px;
+            margin-bottom: 0;
+        }
+
+        @include mq(1200px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+
+                .nav-list {
+                    max-width: 100%;
+                }
+                > div {
+                    flex-direction: row;
+                }
+            }
+        }
+
+        @include mq(992px) {
+            nav {
+                .nav-list {
+                    display: grid;
+                    grid-template-columns: repeat(3, max-content);
+                    justify-content: space-around;
+                    column-gap: 15px;
+                    row-gap: 56px;
+                }
+            }
+        }
+    }
+    @include mq(768px) {
+        padding-top: 48px;
+        
+        .container {
+            .top {
+                flex-direction: column;
+
+                .social {
+                    flex-direction: column;
+                }
+            }
+            hr:first-child {
+                margin-top: 48px;
+                margin-bottom: 73px;
+            }
+            nav {
+                .nav-list {
+                    grid-template-columns: max-content max-content;
+                }
+
+                > div {
+                    @include maxW(100%);
+                    flex-direction: column;
+                    
+                    div {
+                        justify-content: center;
+                        width: 336px;
+                        padding: 19px 58px;
+                        text-align: center;
+
+                        a {
+                            display: none;
+                        }
+                    }
+                }
+                margin-bottom: 56px;
+            }
+            .foot {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            hr:nth-of-type(2) {
+                display: none;
+            }
+            hr:last-child {
+                margin-top: 56px;
+                margin: 56px 20px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,333 @@
+@media screen and (max-width: 1200px) {
+    .rd {
+        padding-top: 6.8rem;
+    }
+    .rd ul {
+        gap: 3.2rem;
+    }
+    .rd .info h6 {
+        font-size: 2rem;
+    }
+    .rd .info p {
+        font-size: 1.6rem;
+    }
+    .rd ul {
+        padding-bottom: 6.8rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    .s-hero .text h1 {
+        max-width: 480px;
+        margin: auto;
+    }
+    .s-hero .text h1::after {
+        top: 185px;
+        background-size: 100%;
+        width: calc(100% - 160px);
+        left: 80px;
+    }
+    .s-hero::after {
+        height: 15rem;
+    }
+    .s-hero .text p {
+        max-width: 43.6rem;
+    }
+    .s-hero .text .arrow {
+        left: 70px;
+        width: 90px;
+    }
+
+    .rd ul {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .rd .item-digital {
+        text-align: center;
+    }
+    .rd .icon {
+        margin: 0 auto 1.6rem;
+    }
+    .rd .info p br {
+        display: none;
+    }
+
+    section.arte {
+        padding: 80px 0;
+    }
+    .arte .title-text {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .arte .title-text > p {
+        display: none;
+    }
+    .arte .left {
+        width: 380px;
+        text-align: center;
+    }
+    .arte .left h3 {
+        font-size: 28px;
+    }
+    .arte .left p {
+        font-size: 16px;
+        
+    }
+    
+    .grid .card-post {
+        padding: 16px;
+    }
+    .grid .card-post .tag {
+        padding: 7px 19.25px;
+    }
+    .grid .card-post .img {
+        width: 116.015px;
+        height: 63.412px;
+    }
+    .grid .card-post h6 {
+        margin-bottom: 0.7rem;
+    }
+    .grid .card-post p {
+        font-size: 14px;
+        letter-spacing: -0.42px;
+    }
+
+    section.cta {
+        padding: 8.8rem 25px;   
+    }
+    .cta .text h2 {
+        font-size: 40px;
+        letter-spacing: -1.2px;
+    }
+    .cta .text p {
+        max-width: 430px;
+        font-size: 18px;
+        letter-spacing: -0.54px;
+    }
+
+    footer main {
+        flex-flow: column wrap;
+    }
+    footer main .left {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    footer nav {
+        margin-top: 4.8rem;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .s-hero h1::after {
+        animation: none;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    header a img {
+        width: 160px;
+    }
+    header nav {
+        display: none;
+    }
+    header .menu-bt {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    .menu-bt {
+        transition: all 1s ease;
+    }
+    menu {
+        height: 0;
+        overflow: hidden;
+
+        background-color: var(--pink-10);
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: height .3s ease;
+    }
+    menu a{
+        flex: auto;
+        color: white;
+        font-size: 1.3rem;
+        letter-spacing: -0.48px;
+        text-align: center;
+        padding: 10px 0;
+        transition: all .3s ease;
+    }
+    menu a:hover, menu button:hover {
+        background-color: var(--pink-30);
+        color: var(--gray-100);
+   
+    }
+    menu button {
+        flex: auto;
+        background-color: var(--pink-20);
+        color: var(--gray-900);
+        padding: 10px 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: -0.48px;
+        transition: all .3s ease;
+    }
+    .s-hero {
+        padding-top: 88px;
+    }
+    .s-hero::after {
+        height: 10rem;
+    }
+    s-hero .text h1 {
+        max-width: 490px;
+        margin: 0 auto;
+    }
+    .s-hero .text h1::after {
+        left: 5%;
+        width: 90%;
+    }
+    .s-hero .text .arrow {
+        left: 27px;
+    }
+
+    .arte .grid {
+        grid-template-columns: 1fr;
+    }
+    .grid .card-post:first-child {
+        grid-column: span 1;
+    }
+    footer {
+        padding: 5.6rem 0;
+    }
+    footer main {
+        padding-bottom: 4.8rem;
+    }
+    footer main .left {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    footer main .left p {
+        max-width: 100%;
+    }
+    footer nav {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+    }
+    footer nav div {
+        width: 120px;
+        align-items: center;
+    }
+    footer nav div a {
+        width: auto;
+    }
+    footer nav div:last-child {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+        justify-content: space-between;
+        align-self: flex-start;
+        gap: 0;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    footer nav div:last-child p:first-child {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    footer nav div > p {
+        grid-column: span 3;
+        justify-content: space-between;
+    }
+    footer a.social {
+        justify-content: space-between;
+        color: var(--color-gray-600, #787C87);
+    }
+    footer a.social p {
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: -0.48px;
+    }
+    footer .trade {
+        font-size: 14px;
+        text-align: center;
+    }
+} 
+@media screen and (max-width: 560px) {
+    .container {
+        padding: 0 2.7rem
+    }
+    .s-hero .text .arrow {
+        display: none;   
+    }
+    .s-hero .text h1 {
+        font-size: 4rem;
+        max-width: 440px;
+    }
+    .s-hero .text p {
+        max-width: 324px;
+        margin-top: 8px;
+        font-size: 16px;
+        margin-bottom: 24px;
+        letter-spacing: -0.48px;
+    }
+    .s-hero .text h1::after {
+        top: 127.9px;
+        left: -20px;
+        width: calc(100% + 40px);
+    }
+    
+    .ilushero {
+        display: none;
+    }
+    .ilusmob {
+        display: block;
+        width: 100%;
+    }
+    .s-hero::after {
+        height: 220px;
+    }
+
+    .rd {
+        padding-top: 8rem;
+    }
+    .rd h3 {
+        font-size: 2.8rem;
+    }
+    .rd .info h6 {
+        font-size: 22px;
+        letter-spacing: -0.72px;
+        
+    }
+    .rd .info p {
+        font-size: 18px;
+        max-width: 3900px;
+        letter-spacing: -0.54px;
+    }
+    .rd ul {
+        padding-bottom: 80px;
+        border-bottom: unset;
+        gap: 64px;
+    }
+
+    .arte .left {
+        width: 280px;
+        text-align: center;
+    }
+    .arte .left h3 {
+        font-size: 28px;
+    }
+
+    .cta .text p {
+        max-width: 320px;
+    }
+}

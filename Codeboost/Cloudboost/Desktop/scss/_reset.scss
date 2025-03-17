@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    background: linear-gradient(122deg, #030009 -11.05%, #03000A 104.5%);
+    font-family: "Inter", sans-serif;
+    color: $gray-100;
+    -webkit-font-smoothing: antialiased;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: $gray-200;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+button {
+    all: unset;
+    cursor: pointer;
+    font-size: 18px;
+}
+input {
+    all: unset;
+}
+hr {
+    max-width: 1216px;
+    
+    height: 1px;
+    border: unset;
+    background-color: rgba(255, 255, 255, 0.10);
+    margin: auto;
+    
+    @media screen and (max-width: 1266px) {
+        margin: 0 25px;
+    }
+}
+.container {
+    width: 100%;
+    max-width: 1266px;
+    padding: 0 25px;
+    margin: 0 auto;
+}

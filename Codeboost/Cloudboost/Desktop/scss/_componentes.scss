@@ -1,0 +1,65 @@
+@mixin btn($t-b, $l-r) {
+    display: inline-block;
+    background-color: $p-color;
+    padding: $t-b $l-r;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    transition: background-color .3s ease;
+    &:hover {
+        background-color: $p-dark;
+    }
+}
+@mixin flex($align, $gap:0, $justify:flex-start) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+
+    max-width: 258px;
+
+    .img {
+        @include flex(center, 0, center);
+        width: 48px;
+        height: 48px;
+
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        background: rgba(255, 255, 255, 0.03);
+
+        margin-bottom: 1.6rem;
+    }
+    h6 {
+        font-size: 1.8rem;
+        
+        margin-bottom: 8px;
+    }
+    p {
+        color: $gray-600;
+        font-size: 1.6rem;
+    }
+}
+
+$breakpoint: (
+    'laptop': 1200px,
+    'tablet': 992px,
+    'mobile': 530px
+);
+
+@mixin mq($device) {
+    @if (map-has-key($breakpoint, $device)) {
+        @media (max-width: map-get($breakpoint, $device)) {
+            @content;
+        }
+    } @else {
+        @warn 'Device not found'
+    }
+}

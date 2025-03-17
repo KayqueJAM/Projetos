@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: white; 
+    font-family: "Inter", sans-serif;
+    color: $gray-600;
+    -webkit-font-smoothing: antialiased;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:not(.btn):hover {
+        
+        filter: brightness(0.8);
+    }
+}
+ul {
+    list-style: none;
+}
+button {
+    all: unset;
+    cursor: pointer;
+}
+.container {
+    @include maxW(1270px);
+    padding: 0 27px;
+    margin: 0 auto;
+}

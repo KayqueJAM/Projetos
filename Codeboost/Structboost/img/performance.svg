@@ -1,0 +1,37 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" fill="#F5F5F5"/>
+<g id="Desktop " clip-path="url(#clip0_1_12)">
+<rect width="1440" height="3787" transform="translate(-944 -1438)" fill="white"/>
+<g id="Section" clip-path="url(#clip1_1_12)">
+<rect width="1440" height="2637" transform="translate(-944 -288)" fill="url(#paint0_linear_1_12)"/>
+<g id="Section 1">
+<g id="Frame 2323">
+<g id="Frame 2320">
+<g id="SEO/search-graph">
+<g id="Group">
+<path id="Path" d="M26.6696 20.2618V14.9979H21.4058" stroke="#F67ACB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_2" d="M31.6714 8.32847L33.3387 6.66111" stroke="#F67ACB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_3" d="M33.3389 13.3306H35.0062" stroke="#F67ACB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_4" d="M26.6696 6.66111V4.99375" stroke="#F67ACB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_5" d="M35.0062 20V26.6694C35.0062 31.2737 31.2736 35.0063 26.6693 35.0063H13.3305C8.72617 35.0063 4.99365 31.2737 4.99365 26.6694V13.3306C4.99365 8.72627 8.72617 4.99375 13.3305 4.99375H19.9999" stroke="#F67ACB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_6" d="M4.99365 20V20C10.8106 23.878 18.5562 23.1111 23.4997 18.1676L26.6693 14.9979" stroke="#F67ACB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_12" x1="-187" y1="-924.313" x2="1676.5" y2="-938.398" gradientUnits="userSpaceOnUse">
+<stop stop-color="#000205"/>
+<stop offset="1" stop-color="#000205"/>
+</linearGradient>
+<clipPath id="clip0_1_12">
+<rect width="1440" height="3787" fill="white" transform="translate(-944 -1438)"/>
+</clipPath>
+<clipPath id="clip1_1_12">
+<rect width="1440" height="2637" fill="white" transform="translate(-944 -288)"/>
+</clipPath>
+</defs>
+</svg>

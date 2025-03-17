@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudboost</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header data-aos="fade-down" data-aos-duration="300">
+        <div class="container">
+            <a href="./" id="logo">
+                <img src="img/logo.svg" alt="Ir para a página inicial">
+            </a>
+            <div class="right">
+                <div class="help">
+                    <a href="#">
+                        <img src="img/icon-help.svg" alt="ícone de ajuda">
+                    </a>
+                    <a href="#">
+                    <p>Precisa de ajuda?</p>
+                    </a>
+                </div>
+                <button class="testar">
+                    <a href="#" >
+                        Testar gratis
+                    </a>
+                </button>
+            </div>
+            <button id="bt-menu" onclick="abrirMenu()">
+                <img src="img/menu-icon.svg" alt="abrir menu">
+            </button>
+        </div>
+    </header>
+
+    <menu>
+        <div class="container">
+            <img src="img/menu-icon.svg" alt="fechar menu" id="bt-Fmenu" onclick="fecharMenu()">
+            <ul>
+                <li class="li">
+                    <a href="#">Precisa de ajuda?</a>
+                </li>
+                <li class="li">
+                    <a href="#">Testar gratis</a>
+                </li>
+            </ul>
+        </div>
+    </menu>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left" data-aos="fade-right">
+                <div class="text">
+                    <h1>
+                        Ferramenta de e-mail marketing perfeita para <span>sua empresa!</span>
+                    </h1>
+                    <p>Aproveite o potencial do e-mail marketing para ganhar vendas e fortalecer seu relacionamento com clientes.</p>
+                </div>
+                <form action="#" method="post" name="form-email">
+                    <input type="email" placeholder="Digite seu e-mail" maxlength="34">
+                    <button type="submit">
+                        Testar gratis
+                    </button>
+                </form>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/icon-google.svg" alt="ir para o google do cloudboost">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icon-facebook.svg" alt="ir para o facebook do cloudboost">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icon-instagram.svg" alt="ir para o instagram do cloudboost">
+                        </a>
+                    </li>
+                </ul>
+                <div class="users">
+                    <img src="img/user.png" alt="ícones de usuários">
+                    <img src="img/icon-star.svg" alt="ícone de estrela">
+                    <p>
+                        (99K <span>Reviews</span>)
+                    </p>
+                </div> 
+            </div>
+            <div class="hero-img" data-aos="fade-left">
+                <img src="img/main-img.png" alt="mulher usando os produtos da cloudboost no celular" id="ilus-hero">
+                <img src="img/main-img-mobile.png" alt="mulher usando os produtos da cloudboost no celular" id="ilus-mob">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="recursos">
+        <div class="container">
+            <div class="text" data-aos="flip-up">
+                <h3>
+                    Conheça os recursos da ferramenta de e-mail marketing CloudBoost
+                </h3>
+                <p>
+                    Mais de 5.000 empresas que utilizam ✌️
+                </p>
+            </div>
+            <div class="cardbox">
+                <div class="card" data-aos="flip-left" data-aos-duration="500">
+                    <div class="img">
+                        <img src="img/icon-1.svg" alt="">
+                    </div>
+                    <h6>
+                        Alcance mais
+                    </h6>
+                    <p>
+                        Aumente o tráfego do seu site e suas vendas utilizando o e-mail marketing.
+                    </p>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="img">
+                        <img src="img/icon-2.svg" alt="">
+                    </div>
+                    <h6>
+                        Gaste menos
+                    </h6>
+                    <p>
+                        Com a ferramenta você faz envios em massa, gastando menos de R$ 0,01 por mensagem!.
+                    </p>
+                </div>
+                <div class="card" data-aos="flip-left"  data-aos-duration="1500">
+                    <div class="img">
+                        <img src="img/icon-3.svg" alt="">
+                    </div>
+                    <h6>
+                        Autonomia e resultado
+                    </h6>
+                    <p>
+                        Crie listas de contatos, campanhas e ainda analise o resultado de cada envio.
+                    </p>
+                </div>
+                <div class="card" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="img">
+                        <img src="img/icon-escudo.png" alt="">
+                    </div>
+                    <h6>
+                        Templates Boost
+                    </h6>
+                    <p>
+                        Modelos prontos para cada tipo de e-mail: newsletter, lançamento, campanha de vendas e outros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="foot">
+        <div class="container" data-aos="zoom-in">
+            <h1>
+                Alavanque com a Ferramenta de E-mail Marketing Perfeita!
+            </h1>
+            <p>
+                Aumente as conversões, nutra relacionamentos e alcance o sucesso. Experimente agora mesmo!
+            </p>
+            <button>
+                Testar grátis
+            </button>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Função para inicializar ou desativar o AOS com base no tamanho da tela
+        function toggleAOS() {
+            if (window.innerWidth <= 768) {
+                // Desativa o AOS para telas pequenas
+                AOS.init({ disable: true });
+            } else {
+                // Inicializa o AOS normalmente para telas maiores
+                AOS.init({ duration: 1000 });
+            }
+        }
+
+        // Chama a função ao carregar a página
+        document.addEventListener('DOMContentLoaded', () => {
+        toggleAOS(); // Executa a lógica no carregamento da página
+        });
+
+        // Atualiza o comportamento ao redimensionar a janela
+        window.addEventListener('resize', toggleAOS);
+    </script>
+    <script src="script/menu.js"></script>
+</body>
+</html>
